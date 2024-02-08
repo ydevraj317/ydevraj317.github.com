@@ -1,0 +1,245 @@
+
+
+  # <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Will You Be My Valentine?</title>
+  <style>
+
+    
+
+  .raj1 {
+    margin-left: 10%;
+      margin-top: 40%;
+      
+  }
+.raj {
+  font-size: 70px;
+  margin-left: 10%;
+height: 200px;
+ width: 800px;
+}
+ 
+.raj2
+{
+  margin-left: 35%;
+
+}
+ 
+ 
+  .dev11,.dev12,.dev13,.dev14,.dev15,.dev16,.dev17,.dev18,.dev19{
+    
+    display: none;
+  }
+  .active
+  {   
+    
+   
+    
+   
+    display: block;
+
+  }
+  .deative
+  {
+    display: none;
+  }
+  .container {
+  text-align: center;
+  }
+  
+  p {
+  color:black;
+ 
+  display: none;
+  }
+  
+  button {
+  margin: 10px;
+  padding: 30px;
+  font-size: 50px;
+  background-color: pink;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  }
+  
+  button.yes {
+  background-color: pink;
+  color: white;
+  }
+  
+  button.no {
+  background-color: pink;
+  transition: 0.5s;
+  position: absolute;
+  margin-left: 30px;
+  }
+  
+  .congratulations {
+    font-size: 70px;
+    font-style:italic;
+  color: red;
+  margin-top: 20px;
+  display: none;
+  }
+
+
+  </style>
+  
+  </head>
+  <body> 
+  <div class="ram">
+    <div class="raj1">
+     <div  class="dev11"><img src="0.webp" alt="your Image"></div>
+     <div  class="dev12">   <img src="1.webp" alt="your Image"></div>
+     <div  class="dev13">   <img src="2.webp" alt="your Image"></div>
+     <div  class="dev14">   <img src="3.webp" alt="your Image"></div>
+     <div  class="dev15">   <img src="4.webp" alt="your Image"></div>
+     <div  class="dev16">   <img src="5.webp" alt="your Image"></div>
+     <div  class="dev17">   <img src="6.webp" alt="your Image"></div>
+     <div  class="dev18">   <img src="7.webp" alt="your Image"></div>
+     <div  class="dev19">   <img src="8.webp" alt="your Image"></div>
+   
+     </div>
+   <div class="raj">
+    <p  class="g0">Will You Be My Valentine?</p>
+    <p class="g2">Thank you for being my valentine</p>
+    <p class="g8">Think it again!</p>
+    <p class="g6">Please be my valentine</p>
+    <p class="g3">Please, i'll give you Gifts</p>
+    <p class="g7">Listen to me</p>
+    <p class="g4">please,i will cry</p>
+    <p class="g8"> i am asking last time</p>
+    <p class="g5">Okay bye ,you don't Deseve me  </p>
+   </div>  <div class="raj2"  >
+         <button class="yes"   onclick="congratulate()">Yes</button>
+    <button class="no"  onclick="moveButton()">No</button>
+    </div>
+  </div>
+</div>
+  <script>
+     var a=0
+    const dev11 =document.querySelector('.dev11')
+    const dev12 =document.querySelector('.dev12')
+    const dev13 =document.querySelector('.dev13')
+    const deve =document.querySelector('.yes')
+    const devf =document.querySelector('.no')
+    const dev14 =document.querySelector('.dev14')
+    const dev15 =document.querySelector('.dev15')
+    const dev16 =document.querySelector('.dev16')
+    const dev17 =document.querySelector('.dev17')
+    const dev18 =document.querySelector('.dev18')
+    const dev19 =document.querySelector('.dev19')
+    var yesButton = document.querySelector('.yes')
+      var noButton = document.querySelector('.no')
+      var dev20 = document.querySelector('.g2')
+      var dev0 =document.querySelector('.g0')
+      var dev23 = document.querySelector('.g3')
+      var dev24 =document.querySelector('.g4')
+      var dev25 = document.querySelector('.g5')
+      var dev26 =document.querySelector('.g6')
+      var dev27 = document.querySelector('.g7')
+      var dev28 =document.querySelector('.g8')
+     
+    function congratulate() {
+      
+      
+      yesButton.remove();
+      noButton.remove();
+
+      dev20.classList.add("active")
+      dev0.classList.remove("active")
+      dev13.classList.add("active")
+      dev11.classList.remove("active")
+      dev12.classList.remove("active")
+      dev14.classList.remove("active")
+      dev15.classList.remove("active")
+      dev16.classList.remove("active")
+      dev17.classList.remove("active")
+      dev18.classList.remove("active")
+      dev23.classList.remove("active")
+      dev24.classList.remove("active")
+      dev25.classList.remove("active")
+      dev26.classList.remove("active")
+      dev27.classList.remove("active")
+      dev28.classList.remove("active")
+     
+
+     
+
+    }
+  
+    
+   
+    window.addEventListener("load",() =>
+    { 
+   
+      dev0.classList.add("active")
+     
+      dev11.classList.add("active")
+     
+      
+    })
+    function  moveButton()
+    {  a++;
+
+      if (a===1)
+      {
+        
+        dev0.classList.remove("active")
+        dev11.classList.remove("active")
+        dev28.classList.add("active")
+        dev19.classList.add("active")
+      }
+      else if(a===2)
+      {
+        dev28.classList.remove("active")
+        dev19.classList.remove("active")
+        dev26.classList.add("active")
+       dev17.classList.add("active")
+      }
+      else if(a===3)
+      {
+        dev26.classList.remove("active")
+        dev17.classList.remove("active")
+        dev23.classList.add("active")
+       dev15.classList.add("active")
+      }
+      else if(a===4)
+      {
+        dev23.classList.remove("active")
+        dev15.classList.remove("active")
+        dev27.classList.add("active")
+       dev18.classList.add("active")
+      }
+      else if(a===5)
+      {
+        dev27.classList.remove("active")
+        dev18.classList.remove("active")
+        dev24.classList.add("active")
+       dev15.classList.add("active")
+      }
+      else if(a===6)
+      {
+        dev24.classList.remove("active")
+        dev15.classList.remove("active")
+        dev28.classList.add("active")
+       dev19.classList.add("active")
+      }
+      else if(a===7)
+      {
+        dev28.classList.remove("active")
+        dev19.classList.remove("active")
+        dev25.classList.add("active")
+       dev16.classList.add("active")
+      }
+    }
+
+ 
+
+
+    window
+  </script>
+  </body>
+  </html>
